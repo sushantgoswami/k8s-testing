@@ -1,0 +1,9 @@
+apiVersion:  extensions/v1beta1
+kind: ReplicaSet
+metadata:
+  name: httpd01
+spec:
+  replicas: 2
+  containers:
+  - image: docker.io/httpd:12-apr-22
+    name: httpd01
